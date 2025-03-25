@@ -172,3 +172,7 @@ send_js_message(message_to_send);
 ```
 To listen to messages *from* JS *to* KS, modify the existing **`on_js_message` action** that is present near the top of the KS code.
 Check the example directory for more info.
+
+# Contributing
+Pull requests are always welcome.<br>
+So you found a bug? Raise an issue or contact me on discord. My discord is `bluzed`. If you know how to fix it though, it would be better to create a pull request as it would save your and my time.
