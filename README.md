@@ -1,5 +1,19 @@
+
 # KS_JS_API
 Connect KrunkScript with JavaScript & send string messages back and forth!
+
+## ***How does this work?***
+KrunkScript allows adding custom divs with onclick event listeners in the browser dom.
+
+The onclick event listeners fire even if you click them through javascript i.e using the .click() method on the element.
+
+The KS code creates a parent div and adds 3 child divs inside with ids 0,1 and flush. 
+The three divs are used along with js .click() method to send information to KS in binary encoded character indexes , which are defined in a KS object and can be edited (though not recommended).
+The data is stored temporarily in a str variable. When data from JS has been transferred completely, flush div is clicked and data is passed on to the handler action.
+
+JS hooks the global console.log method to filter out messages from KrunkScript and according to the allowed chars list length, the number of bits is adjusted in KS and passed on to JS by a simple console.log in the starting of the game.
+
+
 ## ***How to use this?***
 This can be used with the [Tampermonkey browser extension](https://www.tampermonkey.net/)  OR any Krunker client that supports userscripts with instant document-start injection (eg. [KraXen72/crankshaft](https://github.com/KraXen72/crankshaft)).
 
