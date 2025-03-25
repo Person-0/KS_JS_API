@@ -148,6 +148,11 @@ constructor(
     [bool] enable api logs (default = true)
 )
 
+// set a function as the value of this property.
+// it will be called when the API is ready to send & recieve data.
+// incase the API was already ready, function will be called instantly.
+.onready 
+
 // sets the handler for a label
 .setHandler(
     // label i.e the first string in the string array sent from KS
