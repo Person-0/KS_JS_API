@@ -156,16 +156,16 @@ constructor(
 // sets the handler for a label
 .setHandler(
     // label i.e the first string in the string array sent from KS
-    (str) label, 
+    [str] label, 
     // function to call with remaining data as an array argument
-    (func) callback
+    [func] callback
 )
 
 // removes the callback function set with .setHandler for the specified label.
-.removeHandler((str) label)
+.removeHandler([str] label)
 
 // sends a message to KS
-.send((str) msg)
+.send([str] msg)
 ```
 
 # KS API METHODS 
