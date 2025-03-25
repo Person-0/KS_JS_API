@@ -1,0 +1,92 @@
+# Client Script runs only on the client
+# KrunkScript Copyright (C) Yendis Entertainment Pty Ltd
+# 
+# Add custom actions here
+
+obj KS_JS_API = {
+	isKSJSOBJ: true,
+	charlist: "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890 _",
+	input: "",
+	charLen: 0
+};
+action send_js_message(str[] msg){GAME.log("[JSMSG]",msg);}
+
+action on_js_message(str msg) {
+    ######################################
+    # do whatever u want with msg string #
+    ######################################
+    
+	# this part of code assumes that msg will always be in a string array format separated by a _
+	# eg. "label_data1_data2"
+	# you can remove it and add your own implementation or you can use it as it is
+	GAME.log(msg);
+    if(!(UTILS.textContains(msg, "_"))){ return; };
+
+    str[] data = str[];
+    num partIndex = 0;
+    for(num e = 0; e < lengthOf msg; e++){ 
+        if(msg[e] == "_"){
+			partIndex += 1;
+		} else {
+            if(lengthOf data <= partIndex){
+				addTo data msg[e];
+            } else {
+                data[partIndex] += msg[e];
+            }
+		}
+    }
+
+    if(data[0] == "skyColSet"){
+		GAME.SCENE.setSkyColor("#"+data[1]);
+    } else if(data[0] == "cube"){
+		GAME.SCENE.addCube("", "red", (num)data[1], (num)data[2], (num)data[3], (num)data[4], (num)data[5], (num)data[6], {});
+    }
+}
+
+
+str action handle_input_chr(str bininput) {
+    str inputstr = "";
+	for(num i = 0; i < lengthOf bininput; i+=(num) KS_JS_API.charLen){
+		num charInd = 0;
+		for(num e = ((num) KS_JS_API.charLen) -1; e > -1 ; e=e-1){
+			charInd += Math.pow(2, 5-e) * (num) bininput[i+e];
+		}
+		inputstr += (str) KS_JS_API.charlist[charInd];
+	}
+    return inputstr;
+}
+
+# User clicked a DIV (ID)
+str temp = "";
+public action onDIVClicked(str id) {
+	if(id == "KS_JS_flush"){
+		if(lengthOf (str) KS_JS_API.input > 1){
+			on_js_message((str) KS_JS_API.input);
+	        KS_JS_API.input = "";
+		}
+	} else {
+		if(id == "KS_JS_DIV0"){
+		    temp += "0";
+	    } else if(id == "KS_JS_DIV1"){
+		    temp += "1";
+	    }
+		if(lengthOf temp > ((num) KS_JS_API.charLen)-1){
+			(str) KS_JS_API.input += handle_input_chr(temp);
+		    temp = "";
+		}
+	}
+    # ========= continue your code ===============
+}
+
+# Runs when the game starts
+public action start() {
+	GAME.UI.addDIV("KS_JS_CONNECTOR", false, "");
+    GAME.UI.addDIV("KS_JS_DIV1", false, "", "KS_JS_CONNECTOR");
+    GAME.UI.addDIV("KS_JS_DIV0", false, "", "KS_JS_CONNECTOR");
+    GAME.UI.addDIV("KS_JS_flush", false, "", "KS_JS_CONNECTOR");
+    while (Math.pow(2, (num) KS_JS_API.charLen) < (lengthOf KS_JS_API.charlist)){
+	    (num) KS_JS_API.charLen += 1;
+    };
+    GAME.log(KS_JS_API); # important dont remove
+    # ========= continue your code ===============
+}
