@@ -3,6 +3,7 @@ Connect KrunkScript with JavaScript & send string messages back and forth! <br> 
 ![kslogo](https://github.com/BluZed/KS_JS_API/blob/main/assets/logo.png?raw=true) ![jslogo](https://github.com/BluZed/KS_JS_API/blob/main/assets/jslogo.jpg?raw=true)
 
 KrunkScript is a custom scripting language developed by the popular browser game [Krunker.io](https://krunker.io) for adding more logic to custom games.
+[KrunkScript docs](https://docs.krunker.io/#/./files/scripting)
 
 ## 🤓 ***How does this work?***
 KrunkScript allows adding custom divs with onclick event listeners in the browser dom.
