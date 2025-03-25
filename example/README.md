@@ -3,7 +3,7 @@
 - Host the map from [map data](https://raw.githubusercontent.com/BluZed/KS_JS_API/refs/heads/main/example/mapdata.txt)
 - Open Devtools console (normally Ctrl+Shift+i or F12)
 - Wait for KS_JS_API Enabled message.
-- Can now use commands like
+- Can now use commands like the following in the browser console
 ```js
 // set sky color to #ffffff (remove # as it is not supported to be sent, instead the # is added in ks directly)
 KS.send(["setSkyCol","ffffff"].join("_")) //label skyColorHexCodeWithout#
