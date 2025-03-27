@@ -1,0 +1,714 @@
+[
+  [
+    "action()",
+    "GAME.ADMIN.ban(playerID) "
+  ],
+  [
+    "action()",
+    "GAME.ADMIN.kick(playerID) "
+  ],
+  [
+    "action()",
+    "GAME.ADS.playVideo() "
+  ],
+  [
+    "obj[] action()",
+    "GAME.AI.list() "
+  ],
+  [
+    "action()",
+    "GAME.AI.remove(sid) "
+  ],
+  [
+    "obj action()",
+    "GAME.AI.spawn(aid, name, x, y, z, data) "
+  ],
+  [
+    "action()",
+    "GAME.ANIM.playClip(object, clipID, reps) "
+  ],
+  [
+    "action()",
+    "GAME.ANIM.stopClip(object, clipID) "
+  ],
+  [
+    "action()",
+    "GAME.CAMERA.attach() "
+  ],
+  [
+    "action()",
+    "GAME.CAMERA.detach() "
+  ],
+  [
+    "num",
+    "GAME.CAMERA.envZone "
+  ],
+  [
+    "action()",
+    "GAME.CAMERA.fov(val) "
+  ],
+  [
+    "obj action()",
+    "GAME.CAMERA.getObj() "
+  ],
+  [
+    "action()",
+    "GAME.CAMERA.lookAt(x, y, z) "
+  ],
+  [
+    "action()",
+    "GAME.CAMERA.move(x, y, z) "
+  ],
+  [
+    "num",
+    "GAME.CAMERA.position.x "
+  ],
+  [
+    "num",
+    "GAME.CAMERA.position.y "
+  ],
+  [
+    "num",
+    "GAME.CAMERA.position.z "
+  ],
+  [
+    "action()",
+    "GAME.CAMERA.rotate(x, y, z) "
+  ],
+  [
+    "num",
+    "GAME.CAMERA.rotation.x "
+  ],
+  [
+    "num",
+    "GAME.CAMERA.rotation.y "
+  ],
+  [
+    "num",
+    "GAME.CAMERA.rotation.z "
+  ],
+  [
+    "action()",
+    "GAME.CAMERA.shake(amnt) "
+  ],
+  [
+    "action()",
+    "GAME.CHAT.broadcast(message, color) "
+  ],
+  [
+    "action()",
+    "GAME.CHAT.send(playerID, message, color) "
+  ],
+  [
+    "action()",
+    "GAME.CONFIG.getClasses() "
+  ],
+  [
+    "obj action()",
+    "GAME.CONFIG.getHost() "
+  ],
+  [
+    "action()",
+    "GAME.CONFIG.getMatch() "
+  ],
+  [
+    "action()",
+    "GAME.CONFIG.getSettings() "
+  ],
+  [
+    "action()",
+    "GAME.CONFIG.getWeapons() "
+  ],
+  [
+    "bool action()",
+    "GAME.COOKIES.has(key) "
+  ],
+  [
+    "str action()",
+    "GAME.COOKIES.load(key) "
+  ],
+  [
+    "action()",
+    "GAME.COOKIES.remove(key) "
+  ],
+  [
+    "action()",
+    "GAME.COOKIES.save(key, val) "
+  ],
+  [
+    "action()",
+    "GAME.DEFAULT.disable3D() "
+  ],
+  [
+    "action()",
+    "GAME.DEFAULT.disablePlayerBehaviour() "
+  ],
+  [
+    "action()",
+    "GAME.DEFAULT.disablePrediction() "
+  ],
+  [
+    "action()",
+    "GAME.DEFAULT.disableServerSync() "
+  ],
+  [
+    "action()",
+    "GAME.INPUTS.disableDefault() "
+  ],
+  [
+    "action()",
+    "GAME.INPUTS.enableDefault() "
+  ],
+  [
+    "action()",
+    "GAME.INPUTS.freeMouse() "
+  ],
+  [
+    "bool action()",
+    "GAME.INPUTS.keyDown(keyCode) "
+  ],
+  [
+    "action()",
+    "GAME.INPUTS.lockMouse() "
+  ],
+  [
+    "obj action()",
+    "GAME.INPUTS.mouseMovement() "
+  ],
+  [
+    "obj action()",
+    "GAME.INPUTS.mousePos() "
+  ],
+  [
+    "obj action()",
+    "GAME.INPUTS.mousePosOverlay() "
+  ],
+  [
+    "action()",
+    "GAME.INPUTS.unlockMouse() "
+  ],
+  [
+    "obj action()",
+    "GAME.LIVE_OBJECTS.addCube(x, y, z, w, h, l, s, data) "
+  ],
+  [
+    "action()",
+    "GAME.MODS.load(url) "
+  ],
+  [
+    "action()",
+    "GAME.MODS.reset() "
+  ],
+  [
+    "bool action()",
+    "GAME.NETWORK.broadcast(id, data) "
+  ],
+  [
+    "bool action()",
+    "GAME.NETWORK.send(id, data, playerID) "
+  ],
+  [
+    "bool action()",
+    "GAME.NFT.hasWallet(playerID) "
+  ],
+  [
+    "obj[] action()",
+    "GAME.NFT.ownedAssets(playerID, collection, callb) "
+  ],
+  [
+    "obj[] action()",
+    "GAME.OBJECTS.getPathNodes() "
+  ],
+  [
+    "obj[] action()",
+    "GAME.OBJECTS.list() "
+  ],
+  [
+    "action()",
+    "GAME.OVERLAY.arc(x, y, radius, startAngle, endAngle, counterClockwise) "
+  ],
+  [
+    "action()",
+    "GAME.OVERLAY.arcTo(x1, y1, x2, y2, radius) "
+  ],
+  [
+    "action()",
+    "GAME.OVERLAY.beginPath() "
+  ],
+  [
+    "action()",
+    "GAME.OVERLAY.bezierCurveTo(cp1x, cp1y, cp2x, cp2y, x, y) "
+  ],
+  [
+    "action()",
+    "GAME.OVERLAY.clear() "
+  ],
+  [
+    "action()",
+    "GAME.OVERLAY.closePath() "
+  ],
+  [
+    "action()",
+    "GAME.OVERLAY.drawCircle(x, y, w, h, r, color, opac, center) "
+  ],
+  [
+    "action()",
+    "GAME.OVERLAY.drawImage(aid, x, y, w, h, r, opac) "
+  ],
+  [
+    "action()",
+    "GAME.OVERLAY.drawLine(x1, y1, x2, y2, thickness, color, opac) "
+  ],
+  [
+    "action()",
+    "GAME.OVERLAY.drawRect(x, y, w, h, r, color, opac, center) "
+  ],
+  [
+    "action()",
+    "GAME.OVERLAY.drawText(text, x, y, r, size, align, color, opac, font) "
+  ],
+  [
+    "action()",
+    "GAME.OVERLAY.ellipse(x, y, radiusX, radiusY, rotation, startAngle, endAngle, counterClockwise) "
+  ],
+  [
+    "action()",
+    "GAME.OVERLAY.fill() "
+  ],
+  [
+    "action()",
+    "GAME.OVERLAY.fillStyle(color) "
+  ],
+  [
+    "obj action()",
+    "GAME.OVERLAY.getSize() "
+  ],
+  [
+    "action()",
+    "GAME.OVERLAY.globalAlpha(val) "
+  ],
+  [
+    "action()",
+    "GAME.OVERLAY.lineDashOffset(offset) "
+  ],
+  [
+    "action()",
+    "GAME.OVERLAY.lineJoin(option) "
+  ],
+  [
+    "action()",
+    "GAME.OVERLAY.lineTo(x, y) "
+  ],
+  [
+    "action()",
+    "GAME.OVERLAY.lineWidth(width) "
+  ],
+  [
+    "num action()",
+    "GAME.OVERLAY.measureText(size, text, font) "
+  ],
+  [
+    "action()",
+    "GAME.OVERLAY.moveTo(x, y) "
+  ],
+  [
+    "action()",
+    "GAME.OVERLAY.offset(x, y) "
+  ],
+  [
+    "action()",
+    "GAME.OVERLAY.quadraticCurveTo(cpx, cpy, x, y) "
+  ],
+  [
+    "action()",
+    "GAME.OVERLAY.restore() "
+  ],
+  [
+    "action()",
+    "GAME.OVERLAY.save() "
+  ],
+  [
+    "action()",
+    "GAME.OVERLAY.scale(scl) "
+  ],
+  [
+    "action()",
+    "GAME.OVERLAY.setTransform(a, b, c, d, e, f) "
+  ],
+  [
+    "action()",
+    "GAME.OVERLAY.stroke() "
+  ],
+  [
+    "action()",
+    "GAME.OVERLAY.strokeRect(x, y, width, height) "
+  ],
+  [
+    "action()",
+    "GAME.OVERLAY.strokeStyle(color) "
+  ],
+  [
+    "action()",
+    "GAME.OVERLAY.strokeText(text, x, y, maxWidth) "
+  ],
+  [
+    "action()",
+    "GAME.OVERLAY.transform(a, b, c, d, e, f) "
+  ],
+  [
+    "action()",
+    "GAME.OVERLAY.translate(x, y) "
+  ],
+  [
+    "action()",
+    "GAME.PAYMENTS.charge() "
+  ],
+  [
+    "action()",
+    "GAME.PAYMENTS.giveKR(player, val) "
+  ],
+  [
+    "bool action()",
+    "GAME.PLATFORM.isBrowser() "
+  ],
+  [
+    "bool action()",
+    "GAME.PLATFORM.isClient() "
+  ],
+  [
+    "bool action()",
+    "GAME.PLATFORM.isMobile() "
+  ],
+  [
+    "action()",
+    "GAME.PLAYERS.disableMeshes() "
+  ],
+  [
+    "obj action()",
+    "GAME.PLAYERS.findByID(id) "
+  ],
+  [
+    "obj action()",
+    "GAME.PLAYERS.getSelf() "
+  ],
+  [
+    "obj[] action()",
+    "GAME.PLAYERS.list() "
+  ],
+  [
+    "action()",
+    "GAME.PLAYERS.toggleLOD(val) "
+  ],
+  [
+    "obj action()",
+    "GAME.RAYCAST.from(x, y, z, xD, yD, dist) "
+  ],
+  [
+    "obj action()",
+    "GAME.RAYCAST.fromPlayer(player, dist) "
+  ],
+  [
+    "obj action()",
+    "GAME.SCENE.addAsset(aid, x, y, z, scl, colr, data, onLoadCallBack) "
+  ],
+  [
+    "obj action()",
+    "GAME.SCENE.addCube(aid, colr, x, y, z, w, h, l, data) "
+  ],
+  [
+    "obj action()",
+    "GAME.SCENE.addCustom(aid, colr, verts, x, y, z, w, h, l, data) "
+  ],
+  [
+    "obj action()",
+    "GAME.SCENE.addDirLight(colr, x, y, z, tx, ty, tz, intensity, castShadow) "
+  ],
+  [
+    "obj action()",
+    "GAME.SCENE.addLightBar(colr, x, y, z, w, l, data) "
+  ],
+  [
+    "obj action()",
+    "GAME.SCENE.addLightCone(colr, x, y, z, w, l, h, data) "
+  ],
+  [
+    "obj action()",
+    "GAME.SCENE.addPlane(aid, colr, x, y, z, w, l, data) "
+  ],
+  [
+    "obj action()",
+    "GAME.SCENE.addPointLight(colr, x, y, z, distance, decay, intensity, castShadow) "
+  ],
+  [
+    "obj action()",
+    "GAME.SCENE.addRectLight(colr, x, y, z, w, l, intensity) "
+  ],
+  [
+    "obj action()",
+    "GAME.SCENE.addSign(x, y, z, w, l, text, data) "
+  ],
+  [
+    "obj action()",
+    "GAME.SCENE.addSphere(aid, colr, x, y, z, w, h, l, data) "
+  ],
+  [
+    "obj action()",
+    "GAME.SCENE.addSpotLight(colr, x, y, z, tx, ty, tz, distance, decay, intensity, angle, penumbra, castShadow) "
+  ],
+  [
+    "obj action()",
+    "GAME.SCENE.addSprite(aid, colr, x, y, z, w, h, l, data) "
+  ],
+  [
+    "action()",
+    "GAME.SCENE.clear() "
+  ],
+  [
+    "action()",
+    "GAME.SCENE.movObj(obj, x, y, z) "
+  ],
+  [
+    "obj action()",
+    "GAME.SCENE.posToScreen(x, y, z) "
+  ],
+  [
+    "action()",
+    "GAME.SCENE.removeSkyDome() "
+  ],
+  [
+    "action()",
+    "GAME.SCENE.rotObj(obj, x, y, z) "
+  ],
+  [
+    "action()",
+    "GAME.SCENE.scaleObj(obj, x, y, z) "
+  ],
+  [
+    "action()",
+    "GAME.SCENE.setAmbientLight(color, intensity) "
+  ],
+  [
+    "action()",
+    "GAME.SCENE.setFog(colr, distance) "
+  ],
+  [
+    "action()",
+    "GAME.SCENE.setSkyColor(color) "
+  ],
+  [
+    "action()",
+    "GAME.SCENE.setSkyDome(color1, color2, color3, data) "
+  ],
+  [
+    "action()",
+    "GAME.SCENE.setSkyLight(color, intensity, sunAngX, sunAngY, distance) "
+  ],
+  [
+    "str action()",
+    "GAME.SETTINGS.get(key, val) "
+  ],
+  [
+    "str action()",
+    "GAME.SETTINGS.list() "
+  ],
+  [
+    "action()",
+    "GAME.SETTINGS.set(key, val) "
+  ],
+  [
+    "obj action()",
+    "GAME.SOUND.play2D(aid, vol, rate, loop) "
+  ],
+  [
+    "obj action()",
+    "GAME.SOUND.play3D(aid, vol, x, y, z, rate, loop) "
+  ],
+  [
+    "action()",
+    "GAME.SOUND.stop(aid) "
+  ],
+  [
+    "action()",
+    "GAME.STORAGE.load(accountName, gameName, callb) "
+  ],
+  [
+    "action()",
+    "GAME.STORAGE.set(accountName, data, access, callb) "
+  ],
+  [
+    "action()",
+    "GAME.STORAGE.transact(accountName, data, access, callb) "
+  ],
+  [
+    "action()",
+    "GAME.STORAGE.update(accountName, data, access, callb) "
+  ],
+  [
+    "num action()",
+    "GAME.TIME.fixedDelta() "
+  ],
+  [
+    "action()",
+    "GAME.TIME.freeze() "
+  ],
+  [
+    "str action()",
+    "GAME.TIME.getReadable(time) "
+  ],
+  [
+    "num action()",
+    "GAME.TIME.now() "
+  ],
+  [
+    "action()",
+    "GAME.TIME.unfreeze() "
+  ],
+  [
+    "action()",
+    "GAME.TRIGGERS.execute(id) "
+  ],
+  [
+    "obj[] action()",
+    "GAME.TRIGGERS.list() "
+  ],
+  [
+    "str action()",
+    "GAME.UI.addDIV(elementId, vis, styl, parentId) "
+  ],
+  [
+    "str action()",
+    "GAME.UI.addImage(assetId, elementId, vis, styl, parentId) "
+  ],
+  [
+    "str action()",
+    "GAME.UI.getDIVText(id) "
+  ],
+  [
+    "str action()",
+    "GAME.UI.getProp(id, prop) "
+  ],
+  [
+    "obj action()",
+    "GAME.UI.getSize() "
+  ],
+  [
+    "action()",
+    "GAME.UI.hideCrosshair() "
+  ],
+  [
+    "action()",
+    "GAME.UI.hideDefault() "
+  ],
+  [
+    "str action()",
+    "GAME.UI.moveDIV(oldId, parentId, newId) "
+  ],
+  [
+    "action()",
+    "GAME.UI.removeDIV(id) "
+  ],
+  [
+    "action()",
+    "GAME.UI.updateDIV(id, prop, val) "
+  ],
+  [
+    "action()",
+    "GAME.UI.updateDIVText(id, text) "
+  ],
+  [
+    "action()",
+    "GAME.URLS.openDiscord() "
+  ],
+  [
+    "action()",
+    "GAME.URLS.openOpensea() "
+  ],
+  [
+    "action()",
+    "GAME.URLS.openTwitter() "
+  ],
+  [
+    "action()",
+    "GAME.URLS.openYoutube() "
+  ],
+  [
+    "action()",
+    "GAME.changeGame(name) "
+  ],
+  [
+    "action()",
+    "GAME.log(...args) "
+  ],
+  [
+    "action()",
+    "GAME.setTitle(title) "
+  ],
+  [
+    "obj action()",
+    "UTILS.HEXtoRGB(str) "
+  ],
+  [
+    "str action()",
+    "UTILS.RGBtoHEX(r, g, b) "
+  ],
+  [
+    "num action()",
+    "UTILS.anglDst(x, y) "
+  ],
+  [
+    "action()",
+    "UTILS.copyToClipboard(txt) "
+  ],
+  [
+    "num action()",
+    "UTILS.getDir2D(x, y, x2, y2) "
+  ],
+  [
+    "obj action()",
+    "UTILS.getDir3D(x, y, z, x2, y2, z2) "
+  ],
+  [
+    "num action()",
+    "UTILS.getDist2D(x1, y1, x2, y2) "
+  ],
+  [
+    "num action()",
+    "UTILS.getDist3D(x1, y1, z1, x2, y2, z2) "
+  ],
+  [
+    "str action()",
+    "UTILS.hexFromHue(num) "
+  ],
+  [
+    "str action()",
+    "UTILS.invertHex(str) "
+  ],
+  [
+    "num action()",
+    "UTILS.randFloat(min, max) "
+  ],
+  [
+    "num action()",
+    "UTILS.randInt(min, max) "
+  ],
+  [
+    "str action()",
+    "UTILS.replaceText(txt, segm, wit) "
+  ],
+  [
+    "bool action()",
+    "UTILS.textContains(txt, search) "
+  ],
+  [
+    "str action()",
+    "UTILS.toLower(str) "
+  ],
+  [
+    "str action()",
+    "UTILS.toUpper(str) "
+  ],
+  [
+    "str action()",
+    "UTILS.truncateTxt(str, ln, noDot, start) "
+  ]
+]
