@@ -92,6 +92,9 @@ const KS = new KS_CONNECTOR();
 KS.onready = () => {
     KS.send("hello from js"); 
 }
+KS.onmessage = (msg) => {
+    log("message from KS: " + msg);
+} 
 ```
 
 And in KrunkScript, you can do this whenever needed.
@@ -223,6 +226,10 @@ constructor(
 .onready 
 
 .isReady // boolean representing whether the API is ready to send & recieve messages or not.
+
+// set a function as the value of this property.
+// it will be called with a single argument that is the string that is sent from KS when you send something from KS
+.onmessage
 
 // sends a message to KS
 .send([str] msg)
