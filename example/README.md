@@ -1,14 +1,28 @@
-# Example
-- Install the [userscript](https://raw.githubusercontent.com/BluZed/KS_JS_API/refs/heads/main/example/script.user.js)
-- Host the map from [map data](https://raw.githubusercontent.com/BluZed/KS_JS_API/refs/heads/main/example/mapdata.txt)
-- Open Devtools console (normally Ctrl+Shift+i or F12)
-- Wait for KS_JS_API Enabled message.
-- Can now use commands like the following in the browser console
+# Examples
+
+This directory contains some examples on how to use this API.
+Open any directory to read their description on their readme files.
+
+As for debugging purposes, you all should know that krunker disables the default `console.log` in the js devtools console while loading the game. Instead, you can log anything you want to with `window.log` that krunker also assigns.
+
+**This is only applicable for https://krunker.io and is subject to change depending on what the Krunker devs decide to do.**
+
 ```js
-// set sky color to #ffffff (remove # as it is not supported to be sent, instead the # is added in ks directly)
-KS.send(["setSkyCol","ffffff"].join("_")) //label skyColorHexCodeWithout#
-or
-// add a cube to the map. args = x, y, z, w, h, l
-KS.send(["cube",0,0,0,10,10,10].join("_")) //label x y z w h l
+// This will not work once the game is loading / has loaded.
+console.log("hello world") 
+
+// This will work once the game is loading / has loaded.
+window.log("hello world")
+
+// You may do something like to make it work regardless of game load state.
+const log = (e) => {
+    if(window.log){
+        window.log(e);
+    } else {
+        console.log(e);
+    }
+}
 ```
-Check the KS and JS code in editor and compare with results.
+<br>
+
+**If you have an example you would like to share, I would appreciate it if create a pull request for it! You can also directly message me on discord.** 
