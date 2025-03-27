@@ -25,4 +25,4 @@ const log = (e) => {
 ```
 <br>
 
-**If you have an example you would like to share, I would appreciate it if create a pull request for it! You can also directly message me on discord.** 
+**If you have an example you would like to share, I would appreciate it if you create a pull request for it! You can also directly message me on discord.** 
