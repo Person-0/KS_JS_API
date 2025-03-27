@@ -29,7 +29,7 @@ This can be used with the [Tampermonkey browser extension](https://www.tampermon
 ```
 
 
-**You should check-out the [example directory](./example/) for a minimal example that uses this project.**
+**You should check-out the [example directory](./example/) for examples!**
 
 I plan on making the KS part easier once they add the libraries feature to KS.
 
