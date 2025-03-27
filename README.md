@@ -1,9 +1,10 @@
 # 🚀 KS_JS_API
 Connect KrunkScript with JavaScript & send string messages back and forth! <br>
+
 ![kslogo](./assets/logo.png?raw=true) ![jslogo](./assets/jslogo.jpg?raw=true)
 
 KrunkScript is a custom scripting language developed by the popular browser game [Krunker.io](https://krunker.io) for adding more logic to custom games.
-[Original KrunkScript docs](https://docs.krunker.io/#/./files/scripting)
+[Original KrunkScript docs](https://docs.krunker.io/#/./files/scripting) <br> 
 [Better KrunkScript docs by Swat Doge](https://krdocs.swatdoge.eu/home.html)
 
 ## 🤓 ***How does this work?***
