@@ -23,7 +23,7 @@ The JS code listens to changes to the TX div using a [MutationObserver](https://
 
 ## ❓ ***How to use this?***
 This can be used with the [Tampermonkey browser extension](https://www.tampermonkey.net/)  OR any Krunker client that supports userscripts with instant document-start injection (eg. [KraXen72/crankshaft](https://github.com/KraXen72/crankshaft)).
-(Optional) Add this in JavaScript script meta to make the API connect to KS as soon as possible.
+<br> (Optional) Add this in JavaScript script meta to make the API connect to KS as soon as possible.
 ```
 // @run-at       document-start
 ```
