@@ -13,7 +13,7 @@ KrunkScript is a custom scripting language developed by the popular browser game
 It was unstable and did not fully support sending every character to KS as the characters were predefined and limited. 
 Jakob solved this issue entirely by his novel method of using GAME.UI.getDIVText and MutationObserver. Thank you Jakob! <3
 
-KrunkScript allows adding custom divs with onclick event listeners in the browser dom & also getting the innerHTML of the div.
+KrunkScript allows adding custom divs with onclick event listeners in the browser dom & also getting the innerText of the div.
 
 The onclick event listeners fire even if you click them through javascript i.e using the [.click()](https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/click) method on the element.
 
