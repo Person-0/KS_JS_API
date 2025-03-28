@@ -27,9 +27,9 @@ This can be used with the [Tampermonkey browser extension](https://www.tampermon
 ```
 // @run-at       document-start
 ```
+For testing purposes, you may also use it in devtools console! The examples show you how to.
 
-
-**You should check-out the [example directory](./example/) for examples!**
+> **You should check-out the [example directory](./example/) for examples!**
 
 I plan on making the KS part easier once they add the libraries feature to KS.
 
