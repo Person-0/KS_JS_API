@@ -33,7 +33,7 @@ Then you can use any of the following statements.
 
 ```js
 // Only use if you are spawned in. Else KS throws an error which might scare you 
-// Returns in the position of you in the map
+// Returns in JS the position of you in the map
 // By firing the "playerPosition" handler we added before.
 KS.send(stringArray(["getPlayerPosition"]))
 
