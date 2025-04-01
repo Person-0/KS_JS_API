@@ -5,7 +5,7 @@ Connect KrunkScript with JavaScript & send string messages back and forth! <br>
 
 KrunkScript is a custom scripting language developed by the popular browser game [Krunker.io](https://krunker.io) for adding more logic to custom games.
 <br> [Original KrunkScript docs](https://docs.krunker.io/#/./files/scripting) <br> 
-[Better KrunkScript docs by Swat Doge](https://krdocs.swatdoge.eu/home.html)
+[Better KrunkScript docs by Swat Doge](https://beta.swatdoge.eu/)
 
 ## 🤓 ***How does this work?***
 **⚡ Credits to [j4k0b](https://github.com/j4k0xb) for the better updated code! ⚡**
