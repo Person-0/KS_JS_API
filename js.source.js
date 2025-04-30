@@ -1,8 +1,13 @@
 function KS_CONNECTOR(logfunc = window.log || console.log) {
 
-    const logColors = { default: "yellow", error: "red" };
+    const logColors = {
+        default: "yellow",
+        error: "red"
+    };
     const LOG = (e, type = "default") => {
-        if (this.disableLogs || !e) { return }
+        if (this.disableLogs || !e) {
+            return
+        }
         logfunc("%c[KS_JS_API] " + e.toString(), `color: ${logColors[type] || logColors["default"]}; background-color: #171717`)
     }
 
@@ -18,24 +23,30 @@ function KS_CONNECTOR(logfunc = window.log || console.log) {
     {
         let onreadyfunc = this.onready;
         Object.defineProperty(this, "onready", {
-            get: () => { return onreadyfunc; },
+            get: () => {
+                return onreadyfunc;
+            },
             set: (e) => {
                 onreadyfunc = e;
-                if(this.isReady){
+                if (this.isReady) {
                     e();
                 }
-            } 
+            }
         })
     }
 
     this.send = message => {
-        if (!this.tx) { return LOG("tx div not found", "error") };
+        if (!this.tx) {
+            return LOG("tx div not found", "error")
+        };
         this.tx.textContent = message;
         this.tx.click();
     };
 
     const interval = setInterval(() => {
-        if (this.disable) { return clearInterval(interval) };
+        if (this.disable) {
+            return clearInterval(interval)
+        };
 
         this.rx = document.getElementById("KS_TX");
         this.tx = document.getElementById("KS_RX");
@@ -46,7 +57,9 @@ function KS_CONNECTOR(logfunc = window.log || console.log) {
                 for (let i = 1; i < mutations.length; i += 2) {
                     this.onmessage(mutations[i].addedNodes[0].textContent);
                 }
-            }).observe(this.rx, { childList: true });
+            }).observe(this.rx, {
+                childList: true
+            });
 
             clearInterval(interval);
 
@@ -77,6 +90,7 @@ function KS_CONNECTOR(logfunc = window.log || console.log) {
     function onKSMessage(message) {
         LOG('message received: ' + message);
     }
+
     function onready() {
         LOG('warning: .onready not set');
     }
@@ -108,7 +122,11 @@ function KS_CONNECTOR(logfunc = window.log || console.log) {
                         logfunc(error);
                     }
                 } else {
-                    LOG("LabelHandlerMgr > API sent a non-array message: " + msg, "error");
+                    if (this.handlers[msg]) {
+                        this.handlers[msg]();
+                    } else {
+                        LOG("LabelHandlerMgr > No label named \"" + msg + "\". Data recieved: " + msg, "error");
+                    }
                 }
             }
         }
