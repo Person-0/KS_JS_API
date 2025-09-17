@@ -9,7 +9,7 @@ KrunkScript is a custom scripting language developed by the popular browser game
 
 ## 🤓 ***How does this work?***
 **⚡ Credits to [j4k0b](https://github.com/j4k0xb) for the better updated code! ⚡**
-> Originally in [v1.0.0](https://github.com/BluZed/KS_JS_API/releases/tag/v1.0.0) I was using a rather slow and tedious method that involved converting the string into a binary representation of it's character's indexes in a predefined array of characters and then clicking divs a lot of times to transfer that binary information to KS. 
+> Originally in [v1.0.0](https://github.com/Person-0/KS_JS_API/releases/tag/v1.0.0) I was using a rather slow and tedious method that involved converting the string into a binary representation of it's character's indexes in a predefined array of characters and then clicking divs a lot of times to transfer that binary information to KS. 
 It was unstable and did not fully support sending every character to KS as the characters were predefined and limited. 
 Jakob solved this issue entirely by his novel method of using GAME.UI.getDIVText and MutationObserver. Thank you Jakob! <3
 
@@ -276,7 +276,7 @@ To listen to messages *from* JS *to* KS, modify the existing **`on_js_message` a
 Check the example directory for more info.
 
 # Contributing
-> My discord is `bluzed`
+> Pull Requests are welcome. Please open an issue if needed.
 
 So you found a bug? Raise an issue or contact me on discord.
 Feature requests are welcome. 
