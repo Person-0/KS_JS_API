@@ -276,8 +276,6 @@ To listen to messages *from* JS *to* KS, modify the existing **`on_js_message` a
 Check the example directory for more info.
 
 # Contributing
-> Pull Requests are welcome. Please open an issue if needed.
-
-So you found a bug? Raise an issue or contact me on discord.
+So you found a bug? please raise an issue.
 Feature requests are welcome. 
 If you can and want to fix any bug you are more than welcome to do so with a pull request.
